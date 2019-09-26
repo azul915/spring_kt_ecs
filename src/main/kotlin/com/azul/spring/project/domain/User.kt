@@ -1,8 +1,6 @@
-package com.azul.spring.project.entity
+package com.azul.spring.project.domain
 
-import javax.persistence.Column
-import javax.persistence.GeneratedValue
-import javax.persistence.Id
+import javax.persistence.*
 
 /**
  * UserテーブルのEntity
@@ -10,7 +8,8 @@ import javax.persistence.Id
  * @param name 名前
  * @param age 年齢
  */
+@Entity
+@Table(name = "user")
 data class User(@Id @GeneratedValue var id: Int? = 0,
                 @Column(name = "name", nullable = false) var name: String = "",
-                @Column(name = "age", nullable = false) var age: Int? = 0) {
-}
+                @Column(name = "age", nullable = false) var age: Int? = 0)
