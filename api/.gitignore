@@ -30,9 +30,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-mysql/*
-!mysql/init/*
-!mysql/Dockerfile
-!mysql/my.cnf
-!mysql/
